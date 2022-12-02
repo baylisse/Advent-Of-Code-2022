@@ -25,7 +25,8 @@ const pt1 = () => {
 }
 
 const pt2 =() => {
-    const possibleScore = {
+    // change the object to reflect dictated outcomes
+    const dictatedScores = {
         'A X': 3,
         'A Y': 4,
         'A Z': 8,
@@ -36,8 +37,9 @@ const pt2 =() => {
         'C Y': 6,
         'C Z': 7
     }
+    
     for (let pair of pairs) {
-        score += possibleScore[pair];
+        score += dictatedScores[pair];
     }
 }
 
